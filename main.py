@@ -50,7 +50,7 @@ class DownloadThread(QThread):
             # Настройки yt-dlp
             ydl_opts = {
                 'outtmpl': f'{self.output_path}/%(title)s.%(ext)s',
-                'format': self.quality,  # Используем выбранное качество
+                'format': self.quality,
                 'progress_hooks': [progress_hook],
                 'quiet': True,
                 'no_warnings': True,
